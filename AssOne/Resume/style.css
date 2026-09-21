@@ -45,3 +45,26 @@ body {
     border-bottom: 2px solid #333;
     
 }
+
+.personal-info {
+    margin: 20px 0;
+}
+
+.info-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 12px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    font-size: 14px;
+}
+
+.dots {
+    flex: 1;
+    border-bottom: 2px dotted #999;
+    margin: 0 10px;
+}
