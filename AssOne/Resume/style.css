@@ -8,3 +8,40 @@ body {
     font-family: Georgia, 'Times New Roman', serif;
     color: #222;
 }
+
+.cv {
+    width: 900px;
+    margin: 30px auto;
+    padding: 40px 60px;
+    background-color: white;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1{
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.header h3{
+    margin: 8px 0 14px;
+    font-size: 16px;
+}
+
+.address {
+    margin: 0 0 18px;
+    font-size: 14px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #333;
+    
+}
