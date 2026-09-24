@@ -68,3 +68,15 @@ body {
     border-bottom: 2px dotted #999;
     margin: 0 10px;
 }
+
+.section-title {
+    background-color: #eeeeee;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 18px 0;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
