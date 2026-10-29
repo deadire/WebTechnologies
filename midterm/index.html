@@ -13,7 +13,7 @@
 <body>
 
   
-  <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+  <nav class="navbar navbar-dark site-nav sticky-top">
     <div class="container-xl">
       <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
               aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,12 +29,130 @@
         <a class="d-none d-lg-inline" href="#">Contact Us</a>
         <a class="d-none d-lg-inline" href="#">Sign In</a>
         <a class="icon-link" href="#" aria-label="Search"><i class="bi bi-search"></i></a>
-        <a class="icon-link" href="#" aria-label="Cart"><i class="bi bi-bag-fill"></i></a>
+        <div class="cart-wrap">
+          <a class="icon-link cart-link" id="cartLink" href="checkout.html" aria-label="Cart" aria-expanded="false" aria-controls="miniCart"><i class="bi bi-bag-fill"></i><span class="cart-badge" id="cartBadge" hidden>0</span></a>
+          <div class="mini-cart" id="miniCart" hidden>
+            <h2 class="mini-cart-title">Your cart</h2>
+            <p class="text-muted mb-3" id="cartEmpty">Your cart is empty.</p>
+            <ul id="cartList"></ul>
+            <div class="mini-cart-total"><span>Total</span><span id="cartTotal">Rs 0</span></div>
+            <a class="btn btn-accent w-100" href="checkout.html">Checkout</a>
+          </div>
+        </div>
       </div>
 
       <div class="collapse navbar-collapse nav-side order-4 order-lg-1" id="mainNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item mega-item">
+            <a class="nav-link mega-toggle" href="#products">Shop by Category <i class="bi bi-chevron-down small"></i></a>
+            <div class="mega-panel">
+              <div class="container-xl mega-grid">
+            <div class="mega-col">
+              <h3 class="mega-heading">Laptops &amp; Computers</h3>
+              <ul class="list-unstyled mb-0">
+                  <li><a href="#products">Gaming Laptops</a></li>
+                  <li><a href="#products">Business Laptops</a></li>
+                  <li><a href="#products">MacBooks</a></li>
+                  <li><a href="#products">Chromebooks</a></li>
+                  <li><a href="#products">Desktop PCs</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h3 class="mega-heading">Mobiles &amp; Tablets</h3>
+              <ul class="list-unstyled mb-0">
+                  <li><a href="#products">Smartphones</a></li>
+                  <li><a href="#products">iPhones</a></li>
+                  <li><a href="#products">Samsung Galaxy</a></li>
+                  <li><a href="#products">Tablets</a></li>
+                  <li><a href="#products">Power Banks</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h3 class="mega-heading">Audio &amp; Wearables</h3>
+              <ul class="list-unstyled mb-0">
+                  <li><a href="product.html">AirPods</a></li>
+                  <li><a href="#products">Headphones</a></li>
+                  <li><a href="#products">Bluetooth Speakers</a></li>
+                  <li><a href="#products">Smartwatches</a></li>
+                  <li><a href="#products">Fitness Bands</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h3 class="mega-heading">Computer Accessories</h3>
+              <ul class="list-unstyled mb-0">
+                  <li><a href="#products">Keyboards &amp; Mice</a></li>
+                  <li><a href="#products">Monitors</a></li>
+                  <li><a href="#products">Printers</a></li>
+                  <li><a href="#products">Storage Drives</a></li>
+                  <li><a href="#products">Webcams</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h3 class="mega-heading">Game Store</h3>
+              <ul class="list-unstyled mb-0">
+                  <li><a href="#products">Consoles</a></li>
+                  <li><a href="#products">Controllers</a></li>
+                  <li><a href="#products">PC Games</a></li>
+                  <li><a href="#products">Gaming Headsets</a></li>
+                  <li><a href="#products">Gaming Chairs</a></li>
+              </ul>
+            </div>
+              </div>
+            </div>
+            <div class="mega-accordion">
+            <details class="mega-details">
+              <summary>Laptops &amp; Computers</summary>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#products">Gaming Laptops</a></li>
+                <li><a href="#products">Business Laptops</a></li>
+                <li><a href="#products">MacBooks</a></li>
+                <li><a href="#products">Chromebooks</a></li>
+                <li><a href="#products">Desktop PCs</a></li>
+              </ul>
+            </details>
+            <details class="mega-details">
+              <summary>Mobiles &amp; Tablets</summary>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#products">Smartphones</a></li>
+                <li><a href="#products">iPhones</a></li>
+                <li><a href="#products">Samsung Galaxy</a></li>
+                <li><a href="#products">Tablets</a></li>
+                <li><a href="#products">Power Banks</a></li>
+              </ul>
+            </details>
+            <details class="mega-details">
+              <summary>Audio &amp; Wearables</summary>
+              <ul class="list-unstyled mb-0">
+                <li><a href="product.html">AirPods</a></li>
+                <li><a href="#products">Headphones</a></li>
+                <li><a href="#products">Bluetooth Speakers</a></li>
+                <li><a href="#products">Smartwatches</a></li>
+                <li><a href="#products">Fitness Bands</a></li>
+              </ul>
+            </details>
+            <details class="mega-details">
+              <summary>Computer Accessories</summary>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#products">Keyboards &amp; Mice</a></li>
+                <li><a href="#products">Monitors</a></li>
+                <li><a href="#products">Printers</a></li>
+                <li><a href="#products">Storage Drives</a></li>
+                <li><a href="#products">Webcams</a></li>
+              </ul>
+            </details>
+            <details class="mega-details">
+              <summary>Game Store</summary>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#products">Consoles</a></li>
+                <li><a href="#products">Controllers</a></li>
+                <li><a href="#products">PC Games</a></li>
+                <li><a href="#products">Gaming Headsets</a></li>
+                <li><a href="#products">Gaming Chairs</a></li>
+              </ul>
+            </details>
+            </div>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#products">Laptops &amp; Computers <i class="bi bi-chevron-down small"></i></a></li>
           <li class="nav-item"><a class="nav-link" href="#products">Mobiles &amp; Tablets <i class="bi bi-chevron-down small"></i></a></li>
           <li class="nav-item"><a class="nav-link" href="#products">Accessories &amp; Cases <i class="bi bi-chevron-down small"></i></a></li>
@@ -295,5 +413,6 @@
   <a class="whatsapp-float" href="#" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
